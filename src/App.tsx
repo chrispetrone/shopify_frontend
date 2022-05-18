@@ -37,7 +37,7 @@ class App extends React.Component<AppProps, AppState> {
       // frequency_penalty: 0.0,
       // presence_penalty: 0.0,
     };
-    const key: String = "";
+    const key: String = process.env.REACT_APP_OPENAI_KEY || "";
     const headers = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${key}`
