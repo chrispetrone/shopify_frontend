@@ -52,7 +52,6 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   handleResponse(text: String) {
-    console.log(text)
     this.state.history.unshift({
       prompt: this.state.value,
       response: text
@@ -61,9 +60,6 @@ class App extends React.Component<AppProps, AppState> {
   }
 
 
-  submitText = (event: any) => {
-    console.log(event);
-  }
   render() {
     return (
       <Box>
