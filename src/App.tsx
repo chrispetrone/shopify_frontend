@@ -37,7 +37,10 @@ class App extends React.Component<AppProps, AppState> {
       // frequency_penalty: 0.0,
       // presence_penalty: 0.0,
     };
-    const key: String = process.env.REACT_APP_OPENAI_KEY || "";
+    const key: String = "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";
+    // `${process.env.REACT_APP_OPENAI_KEY}` || "NO KEY";
+    // console.log("key is :", key)
+    // console.log(process.env.REACT_APP_OPENAI_KEY)
     const headers = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${key}`
@@ -51,6 +54,7 @@ class App extends React.Component<AppProps, AppState> {
       console.log(resp)
       this.handleResponse(resp.data.choices[0].text)
     }).catch(error => {
+      console.log("key: ", key)
       console.log(error.response)
     });
 
@@ -58,7 +62,7 @@ class App extends React.Component<AppProps, AppState> {
 
   handleResponse(text: String) {
     console.log(text)
-    this.state.history.push({
+    this.state.history.unshift({
       prompt: this.state.value,
       response: text
     })
