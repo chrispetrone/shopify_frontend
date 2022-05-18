@@ -26,7 +26,6 @@ class App extends React.Component<AppProps, AppState> {
     this.setState({ value: event.target.value });
   }
   handleSubmit() {
-    console.log("submit", this.state.value)
     const input = this.state.value || "";
     const data = {
       prompt: input,
@@ -44,7 +43,6 @@ class App extends React.Component<AppProps, AppState> {
       data,
       { headers }
     ).then(resp => {
-      console.log(resp)
       this.handleResponse(resp.data.choices[0].text)
     }).catch(error => {
       console.log("key: ", key)
