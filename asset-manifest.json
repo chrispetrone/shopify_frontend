@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/shopify_frontend/static/css/main.073c9b0a.css",
-    "main.js": "/shopify_frontend/static/js/main.91c1f1b8.js",
-    "static/js/787.cd2cada0.chunk.js": "/shopify_frontend/static/js/787.cd2cada0.chunk.js",
-    "index.html": "/shopify_frontend/index.html",
-    "main.073c9b0a.css.map": "/shopify_frontend/static/css/main.073c9b0a.css.map",
-    "main.91c1f1b8.js.map": "/shopify_frontend/static/js/main.91c1f1b8.js.map",
-    "787.cd2cada0.chunk.js.map": "/shopify_frontend/static/js/787.cd2cada0.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.55eb60bb.js",
+    "static/js/787.cd2cada0.chunk.js": "/static/js/787.cd2cada0.chunk.js",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.55eb60bb.js.map": "/static/js/main.55eb60bb.js.map",
+    "787.cd2cada0.chunk.js.map": "/static/js/787.cd2cada0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.91c1f1b8.js"
+    "static/js/main.55eb60bb.js"
   ]
 }
