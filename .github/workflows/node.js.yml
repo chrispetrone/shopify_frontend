@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -37,7 +37,9 @@ jobs:
       env:
         user_name: 'github_actions[bot]'
         user_email: 'github-action[bot]@users.noreply.github.com'
-        github_token: ${{secrets.ACTIONS_DEPLOY_ACCESS_TOKEN}}
+        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
+        REACT_APP_OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+        
         
   
