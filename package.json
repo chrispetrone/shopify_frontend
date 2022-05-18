@@ -2,7 +2,6 @@
   "name": "shopify_frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chrispetrone.github.io/shopify_frontend/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
