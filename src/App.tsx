@@ -5,7 +5,6 @@ import { Button, TextField } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Card from "@mui/material/Card";
 
 interface AppProps { }
@@ -39,7 +38,7 @@ class App extends React.Component<AppProps, AppState> {
     };
     const key: String = `${process.env.REACT_APP_OPENAI_KEY}` || "NO KEY";
     console.log("key is :", key)
-    console.log(process.env)
+    console.log("env is :", process.env)
     const headers = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${key}`
@@ -92,7 +91,7 @@ class App extends React.Component<AppProps, AppState> {
               multiline
               onChange={this.handleChange}
               onKeyDown={(e) => {
-                if (e.key == 'Enter') {
+                if (e.key === 'Enter') {
                   this.handleSubmit()
                 }
               }}
