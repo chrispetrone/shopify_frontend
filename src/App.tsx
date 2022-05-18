@@ -30,15 +30,10 @@ class App extends React.Component<AppProps, AppState> {
     const input = this.state.value || "";
     const data = {
       prompt: input,
-      temperature: 0.5,
-      max_tokens: 64,
-      // top_p: 1.0,
-      // frequency_penalty: 0.0,
-      // presence_penalty: 0.0,
+      temperature: 0.7,
+      max_tokens: 64
     };
     const key: String = `${process.env.REACT_APP_OPENAI_KEY}` || "NO KEY";
-    console.log("key is :", key)
-    console.log("env is :", process.env)
     const headers = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${key}`
