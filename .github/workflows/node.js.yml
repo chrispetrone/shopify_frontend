@@ -37,10 +37,9 @@ jobs:
       env:
         user_name: 'github_actions[bot]'
         user_email: 'github-action[bot]@users.noreply.github.com'
-        github_token: ${{secrets.ACTIONS_DEPLOY_ACCESS_TOKEN}}
+        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
-        OPENAI_KEY: 'TEST KEY 123'
-        REACT_APP_OPENAI_KEY: 'TEST KEY 456'
+        REACT_APP_OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
         
         
   
